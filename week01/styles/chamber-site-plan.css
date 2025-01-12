@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, body, footer {
+    max-width: 980px;
+    margin: 0 auto;
+    font: 1.2rem;
+}
+
+main {
+    background-color: #DAD7CD;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+header {
+    background-color: #3A5A40;
+    color: #DAD7CD;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #3A5A40;
+    color: #DAD7CD;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 2rem 0 .5rem 0;
+    color: #3A5A40;
+}
+
+body {
+    font-family: "Roboto", Arial, serif;
+    font: 1.2rem;
+}
+
+footer {
+    text-align: center;
+}
+
+ul li {
+    margin-left: 1rem;
+    padding: 3px;
+}
+
+p {
+    padding: 3px;
+}
