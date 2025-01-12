@@ -1,0 +1,43 @@
+@media screen and (min-width: 960px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4.7rem 1fr;
+    }
+
+    h1 {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .section1 {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .section2 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    header img {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    footer {
+        margin-top: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    .responsive-paragraph span {
+        display: inline;
+    }
+
+    .responsive-paragraph {
+        white-space: nowrap;
+    
+    }
+}

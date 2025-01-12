@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, body, footer {
+    max-width: 980px;
+    margin: 0 auto;
+    font: 1.2rem;
+}
+
+body {
+    font-family: "Roboto", Arial, serif;
+    font: 1.2rem;
+}
+
+header {
+    background-color: #005583;
+    color: white;
+    padding: 1.2rem 0 1.2rem 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+header span {
+    font-size: 2rem;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4.7rem 1fr 1fr;
+}
+
+h1 {
+    color: rgb(57, 58, 58);
+    padding: 1.5rem 0 0 0;
+    font-size: 23px;
+    text-align: center;
+    border-bottom: solid 2px rgb(194, 194, 194);
+    margin: 10px;
+}
+
+.card {
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid rgb(194, 194, 194);
+    margin: 10px;
+}
+
+.card h2 {
+    background-color: #005583;
+    color: white;
+    text-align: center;  
+    border-radius: 15px 15px 0 0; 
+    padding: 10px;
+}
+
+.card p {
+    text-align: center;  
+    padding-top: 1.8rem;
+}
+
+.card ul {
+    text-align: left;  
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.card ul li{
+    padding: .2rem;
+}
+
+
+footer {
+    background-color: #005583;
+    color: white;
+    text-align: center;   
+    padding: 20px;
+}
+
+.active {
+    background-color: #85532a;
+    font-weight: 700;
+}
+
+#lastModified {
+    color: yellow;
+    padding-top: .5rem;
+}
+
+.responsive-paragraph {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.responsive-paragraph .copyright {
+    white-space: nowrap;
+
+}
+
+.copyright, .name, .location {
+    margin: 5px;
+}
+
+.responsive-paragraph span {
+    display: block; 
+
+}
