@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Home page for the course assignment portal of WDD 230 - Web Frontend Development course by Vinicius Eduardo Rocca">
+    <meta name="author" content="Vinicius Eduardo Rocca">
+    <meta property="og:title" content="Vinicius Rocca - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/08/festa-do-peao-de-barretos-2024.png?w=596">
+    <meta property="og:url" content="https://www.byui.edu/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <h1>Barretos Chamber of Commerce</h1>
+        <button id="menu" aria-label="HamburgerMenu"></button>
+        <nav class="navigation">
+            <a href="#" title="Home" id="home" class="active">Home</a>
+            <a href="#" title="Discover" id="discover">Discover</a>
+            <a href="#" title="Directory" id="directory">Directory</a>
+            <a href="#" title="Join" id="join">Join</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+
+            <section class="hero-container">
+                <div class="hero">
+                    <picture>
+                        <source srcset="images/hero.webp" media="(min-width: 850px)" width="100%" height="550">
+                        <img src="images/hero.webp" alt="" width="100%" height="300">
+                    </picture>
+                </div>
+                <div class="home-action">
+                    <a href="trips.html">Check Our Trips Here!</a>
+                </div>
+            </section>
+
+            <section class="events-container">
+                <h2>Events</h2>
+                <div class="event">
+                    <h3>Event Title</h3>
+                    <div class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aspernatur excepturi eligendi amet. Beatae eius maiores quisquam ex nostrum doloribus sit odio vel voluptatibus velit.</div>
+                    <a href="#" class="more-info">more info ...</a>
+                    <div class="border"></div>
+                </div>
+            </section>
+
+            <section class="weather-container">
+                <h2>Weather</h2>
+                <div class="weather-content">
+                    <img src="images/weather.svg" alt="Weather Icon" width="80" height="80">
+                    <p class="temperature"><strong>22°C</strong></p>
+                    <p class="condition">Mostly cloudy</p>
+                    <div class="weather-info">
+                        <p>Humidity: <strong>94%</strong></p>
+                        <p>Wind Chill: <strong>N/A</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advertisements-container">
+                <h2>Spotlights</h2>
+                <div class="advertise">
+                    <h3>Company Name</h3>
+                    <div class="message">"message here"</div>
+                    <div class="contact">
+                        <p>contact@email.com</p>
+                        <p>+99-999-9999</p>
+                        <p>Website</p>
+                    </div>
+                </div>
+                <div class="advertise">
+                    <h3>Company Name</h3>
+                    <div class="message">"message here"</div>
+                    <div class="contact">
+                        <p>contact@email.com</p>
+                        <p>+99-999-9999</p>
+                        <p>Website</p>
+                    </div>
+                </div>
+                <div class="advertise">
+                    <h3>Company Name</h3>
+                    <div class="message">"message here"</div>
+                    <div class="contact">
+                        <p>contact@email.com</p>
+                        <p>+99-999-9999</p>
+                        <p>Website</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo" width="150" height="150">
+            </div>
+            <div class="left-side">
+                <p><strong>Barretos</strong></p>
+                <p><strong>Chamber of Commerce</strong></p>
+                <p>Example Street, 13</p>
+                <p>Barretos, Sao Paulo</p>
+            </div>
+            <div class="right-side">
+                <p>contact@email.com</p>
+                <p>+99-999-9999</p>
+                <a href="https://www.google.com/maps/place/Barretos,+State+of+S%C3%A3o+Paulo/@-20.5573015,-48.6592527,12z/data=!3m1!4b1!4m6!3m5!1s0x94bb8522e9e50a15:0x487b1dd782198bac!8m2!3d-20.5723981!4d-48.5675643!16s%2Fg%2F11bc6csnbk?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">📍Location Map</a>
+            </div>
+        </div>
+
+        <div class="responsive-paragraph">
+            <span class="copyright"><p id="currentyear"></p></span>
+            <span class="name"><strong>Vinicius E. Rocca</strong></span>
+            <span class="project">WDD230 Project</span>
+            <p id="lastModified"></p>
+        </div>              
+    </footer>
+    <script defer src="scripts/chamber.js"></script>
+</body>
+</html>
