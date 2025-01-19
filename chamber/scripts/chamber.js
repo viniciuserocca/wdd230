@@ -1,7 +1,7 @@
 // Get current year
 const currentyear = document.querySelector("#currentyear");
 const today = new Date();
-currentyear.innerHTML = `<p class="currentyear">&copy;${today.getFullYear()} Barretos Chamber</p>`;
+currentyear.innerHTML = `<span class="currentyear">&copy;${today.getFullYear()} Barretos Chamber</span>`;
 
 // Get last modification date
 const lastModified = document.querySelector("#lastModified");

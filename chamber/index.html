@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Barretos Chamber of Commerce</title>
     <link rel="icon" href="favicon.ico">
-    <meta name="description" content="Home page for the course assignment portal of WDD 230 - Web Frontend Development course by Vinicius Eduardo Rocca">
+    <meta name="description" content="A website for the Chamber of Commerce project of WDD230 course, made by Vinicius Rocca">
     <meta name="author" content="Vinicius Eduardo Rocca">
     <meta property="og:title" content="Vinicius Rocca - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
 </head>
@@ -34,8 +35,8 @@
             <section class="hero-container">
                 <div class="hero">
                     <picture>
-                        <source srcset="images/hero.webp" media="(min-width: 850px)" width="100%" height="550">
-                        <img src="images/hero.webp" alt="" width="100%" height="300">
+                        <source srcset="images/hero.webp" media="(min-width: 850px)" width="1280" height="550">
+                        <img src="images/hero-large.webp" alt="hero" width="500" height="263">
                     </picture>
                 </div>
                 <div class="home-action">
@@ -118,7 +119,7 @@
         </div>
 
         <div class="responsive-paragraph">
-            <span class="copyright"><p id="currentyear"></p></span>
+            <span class="copyright"><span id="currentyear"></span></span>
             <span class="name"><strong>Vinicius E. Rocca</strong></span>
             <span class="project">WDD230 Project</span>
             <p id="lastModified"></p>

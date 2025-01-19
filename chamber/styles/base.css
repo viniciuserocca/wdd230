@@ -116,7 +116,8 @@ header h1 {
 }
 
 .hero img {
-    filter: blur(3px);
+    filter: blur(2.5px);
+    width: 100%;
 }
 
 .home-action {
@@ -281,7 +282,7 @@ header h1 {
 }
 
 .responsive-paragraph span {
-    display: block; /* Stacked layout for smaller screens */
+    display: block; 
     margin: 5px 0;
 }
 
