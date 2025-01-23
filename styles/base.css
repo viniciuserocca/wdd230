@@ -5,7 +5,7 @@
 }
 
 header, body, footer {
-    max-width: 980px;
+    max-width: 960px;
     margin: 0 auto;
     font: 1.2rem;
 }
@@ -33,17 +33,65 @@ header span {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4.7rem 1fr 1fr;
-    padding-bottom: 2rem;
+    grid-template-rows: 1fr 4.7rem 300px 300px 500px;
+}
+
+.hero {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-label {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #203dbd);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 2rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.hero-label p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
 }
 
 h1 {
+    grid-area: 2 / 1 / 3 / 2;
     color: rgb(57, 58, 58);
     padding: 1.5rem 0 0 0;
     font-size: 23px;
     text-align: center;
     border-bottom: solid 2px rgb(194, 194, 194);
     margin: 10px;
+}
+
+.section1 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.section2 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.map {
+    grid-area: 5 / 1 / 6 / 2;
+    margin: 10px;
+}
+
+.map iframe {
+    width: 100%;
+	object-fit: cover;
 }
 
 .card {
@@ -129,7 +177,6 @@ footer {
 
 main.dark {
     background-color: #474545;
-    color: #FFF;
 }
 
 main.dark h1 {
@@ -137,6 +184,14 @@ main.dark h1 {
 }
 
 main.dark a {
+    color: #FFF;
+}
+
+main.dark li {
+    color: #FFF;
+}
+
+.card.dark p {
     color: #FFF;
 }
 

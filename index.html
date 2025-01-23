@@ -20,14 +20,14 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Vinicius Rocca Profile" width="100" height="125">
+        <img src="images/profile.webp" alt="Vinicius Rocca Profile" width="100" height="125">
         <span>Vinicius E. Rocca</span>
         <button type="button" id="themeBtn">
             <img src="images/dark_theme_icon.svg" alt="Dark Theme Button" width="46" height="46">
         </button>
     </header>
     <div id="extra-space">
-        <button type="button" id="menu"></button>
+        <button type="button" id="menu" aria-label="Menu"></button>
     </div>
     <nav class="navigation">
         <a href="#" title="Home" id="home" class="active">Home</a>
@@ -36,6 +36,15 @@
         <a href="#" title="Form"  id="form">Form</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="/images/hero-small.webp" media="(max-width: 400px)">
+                <img src="/images/hero-large.webp" alt="Campinas Temple" loading="lazy" width="960" height="601">
+                </picture>
+            <div class="hero-label">
+                <p>Campinas Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card section1">
             <h2>Learning Activities</h2>
@@ -52,8 +61,19 @@
             <h2>Information</h2>
             <p>Barretos, Brazil</p>
             <p>92°F - Partly cloudy</p>
-            <p>Page Visits: 13</p>
+            <p>Page Visits: <strong><span class="visits"></span></strong></p>
         </section>
+        <div class="map">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29881.87367484907!2d-48.58208828397374!3d-20.578490866400386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bb8522e9e50a15%3A0x487b1dd782198bac!2sBarretos%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1737604765980!5m2!1sen!2sbr" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
     </main>
     <footer>
         <p class="responsive-paragraph">
@@ -66,6 +86,6 @@
     <script defer src="scripts/getDates.js"></script>
     <script defer src="scripts/darkTheme.js"></script>
     <script defer src="scripts/hamburgerMenu.js"></script>
+    <script defer src="scripts/localStorage.js"></script>
 </body>
-
 </html>
