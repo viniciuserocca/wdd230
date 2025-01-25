@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barretos Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="A website for the Chamber of Commerce project of WDD230 course, made by Vinicius Rocca">
+    <meta name="author" content="Vinicius Eduardo Rocca">
+    <meta property="og:title" content="Vinicius Rocca - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/08/festa-do-peao-de-barretos-2024.png?w=596">
+    <meta property="og:url" content="https://www.byui.edu/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <h1>Barretos Chamber of Commerce</h1>
+        <button id="menu" aria-label="HamburgerMenu"></button>
+        <nav class="navigation">
+            <a href="index.html" title="Home" id="home">Home</a>
+            <a href="discover.html" title="Discover" id="discover"  class="active">Discover</a>
+            <a href="#" title="Directory" id="directory">Directory</a>
+            <a href="#" title="Join" id="join">Join</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container-discover">
+            <section class="sidebar">
+                <div class="display-message border-box"></div>
+                <div class="demographics border-box">
+                    <h2 class="title">Demographic Info</h2>
+                    <div class="row">
+                        <span class="label">Population:</span>
+                        <span class="value">122,485</span>
+                    </div>
+                    <div class="row">
+                        <span class="label">Area:</span>
+                        <span class="value">1,566.161km²</span>
+                    </div>
+                    <div class="row">
+                        <span class="label">Population Density:</span>
+                        <span class="value">78,21hab/km²</span>
+                    </div>
+                    <div class="row">
+                        <span class="label">Population Gender:</span>
+                        <span class="value">47% men</span>
+                    </div>
+                    <div class="row">
+                        <span class="label"></span>
+                        <span class="value">53% women</span>
+                    </div>
+                </div>
+                <div class="border-box">
+                    <h2 class="title">History of Barretos</h2>
+                    <p>The city was founded on August 25, 1854. The first chapel was built in 1856, where today lies the "Praça Francisco Barreto". On January 8, 1897, Barretos was officially established as a municipality.</p>
+                    <img src="images/praca-francisco-barreto.webp" alt="Francisco Barreto Square" loading="lazy" width="400" height="400">
+                </div>
+                <div class="border-box">
+                    <h2 class="title">Rodeo</h2>
+                    <p>The Barretos Rodeo, also known as "Festa do Peão de Barretos", typically attracts around one million visitors every year, making it one of the largest rodeos in the world, and the largest Rodeo in Latin America, with a duration of 10 days, usually in August.</p>
+                    <img src="images/barretos.webp" alt="Barretos Rodeo Festival" loading="lazy" width="400" height="188">
+                </div>
+                <div class="border-box">
+                    <h2 class="title">The Hospital of Love</h2>
+                    <p>Barretos is also known for the treatment of cancer in the "Hospital de Amor", located in the city. The Hospital de Amor is a leading cancer research institution in Latin America, it ranked first among Latin American health centers and second among health research institutions. </p>
+                    <img src="images/barretos-hospital.webp" alt="Hospital de Amor" loading="lazy" width="400" height="201">
+                </div>
+                <div class="border-box">
+                    <h2 class="title">Calendar</h2>
+                    <div class="calendar-header">
+                        <button id="prevMonth">←</button>
+                        <div id="currentMonthYear"></div>
+                        <button id="nextMonth">→</button>
+                    </div>
+                    <div class="calendar"></div>             
+                </div>
+            </section>
+            <section class="content border-box">
+                <h2>Interest</h2>
+                <figure><img class="hover" src="images/arena.webp" alt="Arena" loading="lazy" width="800" height="450"><figcaption>Arena - Parque do Peão de Barretos</figcaption></figure>
+                <figure><img class="hover" src="images/hospital.webp" alt="Hospital de Amor" loading="lazy" width="800" height="500"><figcaption>Hospital de Amor</figcaption></figure>
+                <figure><img class="hover" src="images/museum.webp" alt="Museum" loading="lazy" width="800" height="662"><figcaption>Museum</figcaption></figure>
+                <figure><img class="hover" src="images/bandido.webp" alt="Bull Bandido" loading="lazy" width="800" height="557"><figcaption>Touro Bandido</figcaption></figure>
+                <figure><img class="hover" src="images/geromao.webp" alt="Cowboy Statue" loading="lazy" width="800" height="502"><figcaption>Geromão Statue</figcaption></figure>
+                <figure><img class="hover" src="images/statue.webp" alt="Bull Statue" loading="lazy" width="800" height="600"><figcaption>Touro Bandido Statue</figcaption></figure>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo" width="150" height="150">
+            </div>
+            <div class="left-side">
+                <p><strong>Barretos</strong></p>
+                <p><strong>Chamber of Commerce</strong></p>
+                <p>Example Street, 13</p>
+                <p>Barretos, Sao Paulo</p>
+            </div>
+            <div class="right-side">
+                <p>contact@email.com</p>
+                <p>+99-999-9999</p>
+                <a href="https://www.google.com/maps/place/Barretos,+State+of+S%C3%A3o+Paulo/@-20.5573015,-48.6592527,12z/data=!3m1!4b1!4m6!3m5!1s0x94bb8522e9e50a15:0x487b1dd782198bac!8m2!3d-20.5723981!4d-48.5675643!16s%2Fg%2F11bc6csnbk?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">📍Location Map</a>
+            </div>
+        </div>
+
+        <div class="responsive-paragraph">
+            <span class="copyright"><span id="currentyear"></span></span>
+            <span class="name"><strong>Vinicius E. Rocca</strong></span>
+            <span class="project">WDD230 Project</span>
+            <p id="lastModified"></p>
+        </div>              
+    </footer>
+    <script defer src="scripts/chamber.js"></script>
+</body>
+</html>

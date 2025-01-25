@@ -18,10 +18,11 @@
 main {
     max-width: 1280px;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 body {
-    font-family: "Roboto", Arial, serif;
+    font-family: 'Roboto', Arial, serif;
     margin: 0 auto;
     text-align: center;
 }
@@ -39,6 +40,14 @@ header {
 header h1 {
     text-align: left;
 }
+
+img {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*======  Navigation Menu  ======*/
 
 .navigation {
 	display: flex;
@@ -70,6 +79,8 @@ header h1 {
     border: 1px solid var(--white-color);
 }
 
+/*======  Hamburger Menu  ======*/
+
 #menu {
     font-size: 1.5rem;
 	background: none;
@@ -92,15 +103,25 @@ header h1 {
 	display: block;
 }
 
-/* Containers */
+/*======  Containers  ======*/
 
-.container {
+.container-home {
     display: grid;
-    grid-template-rows: 300px 220px 300px 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     text-align: center;
 }
+
+.container-discover {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+/*======  Home Page  ======*/
 
 .weather-container h2,
 .events-container h2 {
@@ -191,6 +212,11 @@ header h1 {
     text-align: center;
 }
 
+.weather-content img{
+    width: 80px;
+    height: 80px;
+}
+
 .temperature {
     font-size: 24px;
     margin: 5px 0;
@@ -216,7 +242,7 @@ header h1 {
 
 .advertisements-container {
     display: grid;
-    grid-template-rows: 50px 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     padding: 0 1rem 1rem 1rem;
@@ -242,6 +268,134 @@ header h1 {
     color: var(--blue-color);
 }
 
+/*======  Discover Page  ======*/
+
+.sidebar {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.sidebar img {
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.content {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.content h2 {
+    padding: 1rem 0 2rem 0;
+    color: var(--dark-green)
+}
+
+.content figure {
+    padding: 2rem 0 1rem 0;
+}
+
+.content figure img {
+    border-radius: 20px;
+}
+
+.content figure figcaption {
+    margin-top: 10px;
+}
+
+.border-box {
+    background-color: var(--light-gray);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    margin-top: 10px;
+}
+
+.display-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--dark-green);
+    box-shadow: 0 4px 6px var(--green-color);
+    margin-bottom: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px 0;
+}
+
+.label {
+    font-weight: bold;
+    color: var(--black-color);
+    text-align: right;
+}
+
+.value {
+    color: var(--black-color);
+    text-align: left;
+    padding-left: 10px;
+}
+
+.title {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--black-color);
+    color: var(--dark-green);
+}
+
+/*======  Calendar  ======*/
+  
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+  
+#currentMonthYear {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+  
+button {
+    padding: 5px 10px;
+    font-size: 1em;
+    border: 1px solid var(--light-gray);
+    background: var(--light-gray);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+  
+button:hover {
+    background: #ddd;
+}
+  
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+  
+.day {
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 4px;
+    background-color: var(--light-gray);
+    border: 1px solid var(--light-gray);
+    font-size: 0.9em;
+}
+  
+.day:first-child {
+    font-weight: bold;
+}
+  
+.day:hover {
+    background: var(--green-color);
+    color: var(--white-color);
+}
+
 /*======  Footer  ======*/
 
 .contact-info {
@@ -256,6 +410,11 @@ header h1 {
 .logo {
     grid-area: 1 / 1 / 2 /2;
     text-align: right;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
 }
 
 .left-side {
