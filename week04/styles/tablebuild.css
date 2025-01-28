@@ -1,0 +1,44 @@
+body {
+	font-family: Arial, serif;
+}
+
+table {
+	margin: 10px auto;
+	border: 1px solid black;
+	box-shadow: 0 0 10px gray;
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	font-size: smaller;
+}
+
+tr:first-child th, .highlight {
+	background-color: black;
+	color: white;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+
+th {
+	background-color: gray;
+  color: white;
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: lightgray;
+}
+
+.blank {
+  background-color: black;
+}
