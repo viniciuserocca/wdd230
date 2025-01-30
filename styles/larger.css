@@ -1,5 +1,5 @@
 @media screen and (min-width: 960px) {
-    main {
+    .home-container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 4.7rem 300px 475px;
     }
@@ -8,7 +8,7 @@
         grid-area: 1 / 1 / 2 / 4;
     }
 
-    h1 {
+    .home-container h1 {
         grid-area: 2 / 1 / 3 / 4;
     }
 

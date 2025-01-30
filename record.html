@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Rocca - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Home page for the course assignment portal of WDD 230 - Web Frontend Development course by Vinicius Eduardo Rocca">
+    <meta name="author" content="Vinicius Eduardo Rocca">
+    <meta property="og:title" content="Vinicius Rocca - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/08/festa-do-peao-de-barretos-2024.png?w=596">
+    <meta property="og:url" content="https://www.byui.edu/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Vinicius Rocca Profile" width="100" height="125">
+        <span>Vinicius E. Rocca</span>
+        <button type="button" id="themeBtn">
+            <img src="images/dark_theme_icon.svg" alt="Dark Theme Button" width="46" height="46">
+        </button>
+    </header>
+    <div id="extra-space">
+        <button type="button" id="menu" aria-label="Menu"></button>
+    </div>
+    <nav class="navigation">
+        <a href="index.html" title="Home" id="home">Home</a>
+        <a href="./chamber/index.html" title="Chamber"  id="chamber" >Chamber</a>
+        <a href="./week01/chamber-site-plan.html" title="Site Plan"  id="siteplan" >Site Plan</a> 
+        <a href="form.html" title="Form"  id="form"  class="active">Form</a>
+    </nav>
+    <main>
+        <div class="record">
+            <h1>You have been registered!</h1>
+        </div>
+    </main>
+    <footer>
+        <p class="responsive-paragraph">
+            <span class="copyright"><span id="currentyear"></span></span>
+            <span class="name">| Vinicius Eduardo Rocca |</span>
+            <span class="location">Brazil</span>
+        </p>              
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="scripts/getDates.js"></script>
+    <script defer src="scripts/darkTheme.js"></script>
+    <script defer src="scripts/hamburgerMenu.js"></script>
+</body>
+</html>
