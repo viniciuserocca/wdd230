@@ -86,7 +86,7 @@ if(window.location.pathname.indexOf('discover.html') != -1){
 	// Initialize calendar
 	createCalendar(currentYear, currentMonth);
 
-	//====================== LocalStorage ======================//
+	
 
 	const message = document.querySelector(".display-message");
 
@@ -121,4 +121,37 @@ if(window.location.pathname.indexOf('discover.html') != -1){
 
 	// Store the current visit date in localStorage
 	localStorage.setItem("lastVisit", now.toISOString());
+}
+
+
+//====================== Join Page ======================//
+
+//Timestamp
+
+if(window.location.pathname.indexOf('join.html') != -1){
+
+	document.getElementById("timestamp").value = new Date().toISOString();
+}
+
+//Countdown
+
+if(window.location.pathname.indexOf('thankyou.html') != -1){
+
+	const counter = document.querySelector('#counter');
+
+	function countdown() {
+		let countdownElement = document.getElementById('countdown');
+		let countdownValue = 10; 
+
+		const countdownInterval = setInterval(() => {
+		countdownValue--;
+		countdownElement.textContent = countdownValue;
+
+		if (countdownValue <= 0) {
+				clearInterval(countdownInterval);
+				window.location.href = 'index.html';
+			}
+		}, 1000);
+	}
+	countdown();
 }

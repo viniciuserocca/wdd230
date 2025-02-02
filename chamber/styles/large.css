@@ -46,6 +46,10 @@
         grid-template-columns: 450px 1fr;
     }
 
+    .container-join {
+        grid-template-rows: 75px 1fr;
+    }
+
     /*======  Home Page  ======*/
     
     .hero-container {
@@ -90,7 +94,21 @@
         display: none;
     }
 
-    .hover:hover {box-shadow: 0 0 50px #333;}
+    /*======  Join Page  ======*/
+
+    .container-join {
+        grid-template-rows: 75px 1fr;
+        grid-template-columns: 1fr 35%;
+        grid-gap: 20px;
+    }
+
+    .form {
+        grid-area: 2 / 1/ 3 / 2;
+    }
+    
+    .membership-info {
+        grid-area: 2 / 2/ 3 / 3;
+    }
 
     /*======  Footer  ======*/
 
