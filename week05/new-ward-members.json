@@ -1,0 +1,37 @@
+{
+    "familyName" : "Rocca",
+    "dateMovedIntoTheWard" : "02/01/2025",
+    "numberOfFamilyMembers" : 6,
+    "visitedTheBishopric" : false,
+    "familyMembers" : [
+      {
+        "name" : "Vinicius",
+        "gender" : "male",
+        "birthDate" : "12/09/1999"
+      },
+      {
+        "name" : "Denise",
+        "gender" : "female",
+        "birthDate" : "09/05/1970"
+      },{
+        "name" : "Emillyn",
+        "gender" : "female",
+        "birthDate" : "02/14/1994"
+      },
+      {
+        "name" : "Joyce",
+        "gender" : "female",
+        "birthDate" : "03/10/1995"
+      },
+      {
+        "name" : "Arthur",
+        "gender" : "male",
+        "birthDate" : "06/14/2012"
+      },
+      {
+        "name" : "Geovana",
+        "gender" : "female",
+        "birthDate" : "01/13/2016"
+      }
+    ]
+}
