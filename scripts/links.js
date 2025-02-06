@@ -44,4 +44,3 @@ const displayLinks = (weeks) => {
 } 
   
 getLinks();
-  
