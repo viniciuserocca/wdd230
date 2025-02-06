@@ -49,19 +49,16 @@
             <h1>WDD 230: Web Frontend Development</h1>
             <section class="card section1">
                 <h2>Learning Activities</h2>
-                <ul>
-                    <li>Week 01: <a href="./week01/holygrail.html" target="_blank"> Layout</a> | <a href="./week01/media-query.html" target="_blank">Media Query</a> | <a href="https://codepen.io/viniciuserocca/pen/mybxWvQ" target="_blank">JS Pen</a></li>
-                    <li>Week 02: <a href="./week02/design.html" target="_blank"> Design Principles</a> | <a href="https://codepen.io/viniciuserocca/pen/emOMqOw" target="_blank"> Hamburger Menu</a> | <a href="./week02/bom.html" target="_blank"> BOM</a></li>
-                    <li>Week 03: <a href="week03/images/landscape.webp" target="_blank">WebP</a> | <a href="./week03/lazyloading.html" target="_blank">Lazy Loading</a> | <a href="./week03/responsive-images.html" target="_blank">Responsive images</a> | <a href="./week03/bom.html" target="_blank"> BOM</a></li>
-                    <li>Week 04: <a href="https://codepen.io/viniciuserocca/pen/qEWLQpq" target="_blank">Pseudo Classes</a> | <a href="/week04/images/combinators-exercises.png" target="_blank">Combinators</a> | <a href="/week04/tablebuild.html" target="_blank">HTML Tables</a> | <a href="/week04/form-start/index.html" target="_blank">HTML Forms</a></li>
-                    <li>Week 05: <a href="https://codepen.io/viniciuserocca/pen/mybZXBK" target="_blank"> Pseudo-elements</a> | <a href="./week05/new-ward-members.json">JSON</a> | <a href="./week05/prophets.html">The Fetch API</a> | <a href="./week05/weather.html">Weather API</a></li>
-                    <li>Week 06:</li>
-                </ul>
+                
             </section>
             <section class="card section2">
                 <h2>Information</h2>
                 <p>Barretos, Brazil</p>
-                <p>92°F - Partly cloudy</p>
+                <div class="weather">
+                    <img id="weather-icon" src="" alt="">
+                    <p id="current-temp"></p>
+                    <p id="weatherDesc"></p>
+                </div>
                 <p>Page Visits: <strong><span class="visits"></span></strong></p>
             </section>
             <div class="map">
@@ -89,5 +86,7 @@
     <script defer src="scripts/darkTheme.js"></script>
     <script defer src="scripts/hamburgerMenu.js"></script>
     <script defer src="scripts/localStorage.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/links.js"></script>
 </body>
 </html>

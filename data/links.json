@@ -1,0 +1,101 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url":"./week01/holygrail.html",
+                    "title":"Layout"
+                },
+                {
+                    "url":"./week01/media-query.html",
+                    "title":"Media Query"
+                },
+                {
+                    "url":"https://codepen.io/viniciuserocca/pen/mybxWvQ",
+                    "title":"JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url":"./week02/design.html",
+                    "title":"Design Principles"
+                },
+                {
+                    "url":"https://codepen.io/viniciuserocca/pen/emOMqOw",
+                    "title":"Hamburger Menu"
+                },
+                {
+                    "url":"./week02/bom.html",
+                    "title":"BOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url":"./week03/images/landscape.webp",
+                    "title":"WebP"
+                },
+                {
+                    "url":"./week03/lazyloading.html",
+                    "title":"Lazy Loading"
+                },
+                {
+                    "url":"./week03/responsive-images.html",
+                    "title":"Responsive images"
+                },
+                {
+                    "url":"./week03/bom.html",
+                    "title":"BOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url":"https://codepen.io/viniciuserocca/pen/qEWLQpq",
+                    "title":"Pseudo Classes"
+                },
+                {
+                    "url":"./week04/images/combinators-exercises.png",
+                    "title":"Combinators"
+                },
+                {
+                    "url":"./week04/tablebuild.html",
+                    "title":"HTML Tables"
+                },
+                {
+                    "url":"./week04/form-start/index.html",
+                    "title":"HTML Forms"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url":"https://codepen.io/viniciuserocca/pen/mybZXBK",
+                    "title":"Pseudo-elements"
+                },
+                {
+                    "url":"./week05/new-ward-members.json",
+                    "title":"JSON"
+                },
+                {
+                    "url":"./week05/prophets.html",
+                    "title":"The Fetch API"
+                },
+                {
+                    "url":"./week05/weather.html",
+                    "title":"Weather API"
+                }
+            ]
+        }
+    ]
+}

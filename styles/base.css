@@ -111,7 +111,7 @@ header span {
 
 .card p {
     text-align: center;  
-    padding-top: 1.8rem;
+    padding-top: 2.4rem;
 }
 
 .card ul {
@@ -243,4 +243,22 @@ main.dark li {
 
 .open a {
 	display: block;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+}
+
+.weather img{
+    padding: 22px 8px 0 0;
+}
+
+.weather p{
+    padding: 2.4rem 5px 0 0;
+}
+
+#weatherDesc {
+    text-transform: capitalize;
+    margin-left: 5px;
 }
