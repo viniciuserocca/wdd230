@@ -142,7 +142,6 @@ img {
 
 .container-directory {
     display: grid;
-    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     text-align: center;
@@ -558,6 +557,58 @@ button:hover {
     height: 150px;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+
+/*======  Join Page  ======*/
+
+.display-view {
+    padding: 2rem 0;
+}
+
+.display-view button {
+    border: 2px solid var(--dark-green);
+}
+
+.container-directory > section {
+    background-color: var(--light-gray);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+}
+
+.container-directory img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list p,
+.list h3,
+.list a 
+{
+    text-align: left;
+    padding: 3px .8rem;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section:nth-child(even) {
+	background-color: var(--light-green);
 }
 
 /*======  Footer  ======*/

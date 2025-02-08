@@ -1,11 +1,19 @@
 {
     "companies": [
         {
+            "name": "RC Celulares",
+            "address": "101 zero nineteen ave",
+            "phone": "(17) 98110-1991",
+            "url": "https://wa.me/+5517981101991",
+            "logo": "https://viniciuserocca.github.io/wdd230/chamber/images/rc-logo.webp",
+            "membership": "Gold Member"
+        },
+        {
             "name": "name example",
             "address": "199 Example street",
             "phone": "(100)999-0000",
             "url": "https://google.com",
-            "image": "./images/arena.webp",
+            "logo": "https://viniciuserocca.github.io/wdd230/chamber/images/arena.webp",
             "membership": "Gold"
         },
         {
@@ -13,7 +21,7 @@
             "address": "199 Example street",
             "phone": "(100)999-0000",
             "url": "https://google.com",
-            "image": "./images/arena.webp",
+            "logo": "https://viniciuserocca.github.io/wdd230/chamber/images/arena.webp",
             "membership": "Gold"
         },
         {
@@ -21,7 +29,7 @@
             "address": "199 Example street",
             "phone": "(100)999-0000",
             "url": "https://google.com",
-            "image": "./images/arena.webp",
+            "logo": "https://viniciuserocca.github.io/wdd230/chamber/images/arena.webp",
             "membership": "Gold"
         },
         {
@@ -29,7 +37,7 @@
             "address": "199 Example street",
             "phone": "(100)999-0000",
             "url": "https://google.com",
-            "image": "./images/arena.webp",
+            "logo": "https://viniciuserocca.github.io/wdd230/chamber/images/arena.webp",
             "membership": "Gold"
         },
         {
@@ -37,7 +45,7 @@
             "address": "199 Example street",
             "phone": "(100)999-0000",
             "url": "https://google.com",
-            "image": "./images/arena.webp",
+            "logo": "https://viniciuserocca.github.io/wdd230/chamber/images/arena.webp",
             "membership": "Gold"
         },
         {
@@ -45,15 +53,7 @@
             "address": "199 Example street",
             "phone": "(100)999-0000",
             "url": "https://google.com",
-            "image": "./images/arena.webp",
-            "membership": "Gold"
-        },
-        {
-            "name": "name example",
-            "address": "199 Example street",
-            "phone": "(100)999-0000",
-            "url": "https://google.com",
-            "image": "./images/arena.webp",
+            "logo": "https://viniciuserocca.github.io/wdd230/chamber/images/arena.webp",
             "membership": "Gold"
         }
     ]

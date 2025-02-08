@@ -160,13 +160,15 @@ if(window.location.pathname.indexOf('thankyou.html') != -1){
 
 if(window.location.pathname.indexOf('directory.html') != -1){
 
-	const url = '';
+	// JSON
+	//const url = 'https://viniciuserocca.github.io/wdd230/chamber/data/members.json';
+	const url = './data/members.json';
 	const container = document.querySelector('.container-directory');
 
 	async function getMemberData() {
 		const response = await fetch(url);
 		const data = await response.json();
-		displayMembers(data);
+		displayMembers(data.companies);
 	}
 
 	const displayMembers = (members) => {
@@ -179,19 +181,26 @@ if(window.location.pathname.indexOf('directory.html') != -1){
 		let logo = document.createElement('img');
 		let membership = document.createElement('p');
 	
-		fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+		name.textContent = `${member.name}`;
+		address.textContent = `${member.address}`;
+		phone.textContent = `${member.phone}`;
+		membership.textContent = `${member.membership}`;
 
-		portrait.setAttribute('src', prophet.imageurl);
-		portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
-		portrait.setAttribute('loading', 'lazy');
-		portrait.setAttribute('width', '340');
-		portrait.setAttribute('height', '440');
-	
+		link.setAttribute('href', member.url);
+		link.setAttribute('target', '_blank');
+		link.textContent = `${member.url}`;
+
+		logo.setAttribute('src', member.logo);
+		logo.setAttribute('alt', `${member.name} company logo`);
+		logo.setAttribute('loading', 'lazy');
+		logo.setAttribute('width', '200');
+		logo.setAttribute('height', '200');
+		
+		card.appendChild(logo);
 		card.appendChild(name); 
 		card.appendChild(address);
 		card.appendChild(phone);
 		card.appendChild(link);
-		card.appendChild(logo);
 		card.appendChild(membership);
 		
 		container.appendChild(card);
@@ -199,5 +208,20 @@ if(window.location.pathname.indexOf('directory.html') != -1){
 	}
 	
 	getMemberData();
+
+	// Layout
+	const gridbutton = document.querySelector("#grid");
+	const listbutton = document.querySelector("#list");
+	const display = document.querySelector(".display");
+
+	gridbutton.addEventListener("click", () => {
+		display.classList.add("container-directory");
+		display.classList.remove("list");
+	});
+
+	listbutton.addEventListener("click", () => {
+		display.classList.add("list");
+		display.classList.remove("container-directory");
+	});
 
 }

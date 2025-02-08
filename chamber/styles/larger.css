@@ -51,8 +51,7 @@
     }
 
     .container-directory {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
     /*======  Home Page  ======*/
@@ -113,6 +112,13 @@
     
     .membership-info {
         grid-area: 2 / 2/ 3 / 3;
+    }
+
+    /*======  Directory Page  ======*/
+
+    .list section {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     /*======  Footer  ======*/
