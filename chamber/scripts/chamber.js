@@ -161,8 +161,7 @@ if(window.location.pathname.indexOf('thankyou.html') != -1){
 if(window.location.pathname.indexOf('directory.html') != -1){
 
 	// JSON
-	//const url = 'https://viniciuserocca.github.io/wdd230/chamber/data/members.json';
-	const url = './data/members.json';
+	const url = 'https://viniciuserocca.github.io/wdd230/chamber/data/members.json';
 	const container = document.querySelector('.container-directory');
 
 	async function getMemberData() {
@@ -187,11 +186,12 @@ if(window.location.pathname.indexOf('directory.html') != -1){
 		membership.textContent = `${member.membership}`;
 
 		link.setAttribute('href', member.url);
+		link.setAttribute('id', 'link');
 		link.setAttribute('target', '_blank');
 		link.textContent = `${member.url}`;
 
 		logo.setAttribute('src', member.logo);
-		logo.setAttribute('alt', `${member.name} company logo`);
+		logo.setAttribute('alt', `${member.name} Company Logo`);
 		logo.setAttribute('loading', 'lazy');
 		logo.setAttribute('width', '200');
 		logo.setAttribute('height', '200');
@@ -217,11 +217,17 @@ if(window.location.pathname.indexOf('directory.html') != -1){
 	gridbutton.addEventListener("click", () => {
 		display.classList.add("container-directory");
 		display.classList.remove("list");
+
+		gridbutton.classList.add("button-active");
+		listbutton.classList.remove("button-active");
 	});
 
 	listbutton.addEventListener("click", () => {
 		display.classList.add("list");
 		display.classList.remove("container-directory");
+		
+		listbutton.classList.add("button-active");
+		gridbutton.classList.remove("button-active");
 	});
 
 }
