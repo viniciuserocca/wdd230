@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "name example",
+            "address": "199 Example street",
+            "phone": "(100)999-0000",
+            "url": "https://google.com",
+            "image": "./images/arena.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "name example",
+            "address": "199 Example street",
+            "phone": "(100)999-0000",
+            "url": "https://google.com",
+            "image": "./images/arena.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "name example",
+            "address": "199 Example street",
+            "phone": "(100)999-0000",
+            "url": "https://google.com",
+            "image": "./images/arena.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "name example",
+            "address": "199 Example street",
+            "phone": "(100)999-0000",
+            "url": "https://google.com",
+            "image": "./images/arena.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "name example",
+            "address": "199 Example street",
+            "phone": "(100)999-0000",
+            "url": "https://google.com",
+            "image": "./images/arena.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "name example",
+            "address": "199 Example street",
+            "phone": "(100)999-0000",
+            "url": "https://google.com",
+            "image": "./images/arena.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "name example",
+            "address": "199 Example street",
+            "phone": "(100)999-0000",
+            "url": "https://google.com",
+            "image": "./images/arena.webp",
+            "membership": "Gold"
+        }
+    ]
+}

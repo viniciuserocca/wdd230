@@ -155,3 +155,49 @@ if(window.location.pathname.indexOf('thankyou.html') != -1){
 	}
 	countdown();
 }
+
+//====================== Directory Page ======================//
+
+if(window.location.pathname.indexOf('directory.html') != -1){
+
+	const url = '';
+	const container = document.querySelector('.container-directory');
+
+	async function getMemberData() {
+		const response = await fetch(url);
+		const data = await response.json();
+		displayMembers(data);
+	}
+
+	const displayMembers = (members) => {
+		members.forEach((member) => {
+		let card = document.createElement('section');
+		let name = document.createElement('h3');
+		let address = document.createElement('p');
+		let phone = document.createElement('p');
+		let link = document.createElement('a');
+		let logo = document.createElement('img');
+		let membership = document.createElement('p');
+	
+		fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+
+		portrait.setAttribute('src', prophet.imageurl);
+		portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+		portrait.setAttribute('loading', 'lazy');
+		portrait.setAttribute('width', '340');
+		portrait.setAttribute('height', '440');
+	
+		card.appendChild(name); 
+		card.appendChild(address);
+		card.appendChild(phone);
+		card.appendChild(link);
+		card.appendChild(logo);
+		card.appendChild(membership);
+		
+		container.appendChild(card);
+		});
+	}
+	
+	getMemberData();
+
+}

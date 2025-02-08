@@ -140,6 +140,14 @@ img {
     padding-bottom: 2rem;
 }
 
+.container-directory {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+}
+
 /*======  Home Page  ======*/
 
 .weather-container h2,
