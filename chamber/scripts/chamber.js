@@ -163,6 +163,7 @@ if(window.location.pathname.indexOf('directory.html') != -1){
 	// JSON
 	const url = 'https://viniciuserocca.github.io/wdd230/chamber/data/members.json';
 	const container = document.querySelector('.container-directory');
+	let count = 0;
 
 	async function getMemberData() {
 		const response = await fetch(url);
@@ -192,7 +193,13 @@ if(window.location.pathname.indexOf('directory.html') != -1){
 
 		logo.setAttribute('src', member.logo);
 		logo.setAttribute('alt', `${member.name} Company Logo`);
-		logo.setAttribute('loading', 'lazy');
+		
+		if (count == 0){ //the first image won't have lazy loading, to fix a performance issue
+			count++;
+		}
+		else {
+			logo.setAttribute('loading', 'lazy');
+		}
 		logo.setAttribute('width', '200');
 		logo.setAttribute('height', '200');
 		
