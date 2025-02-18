@@ -85,13 +85,13 @@ img {
 /*======  Hamburger Menu  ======*/
 
 #menu {
-    font-size: 2rem;
+    font-size: 48px;
 	background: none;
     border: 0;
 	color: var(--white-color);
 	position: absolute;
 	top: 2.5rem;
-	right: 2rem;
+	right: 1rem;
 }
 
 #menu::before {
@@ -190,10 +190,73 @@ img {
     background-color: rgb(255, 168, 6);
 }
 
+/*======  Banner  ======*/
+
+.banner-container {
+    grid-area: 2 / 1 / 3 / 3;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border-radius: 30px 0px 30px 0px;
+    min-height: 200px;
+    position: relative;
+    padding: 2rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.banner-container::before {
+    content: "";
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    right: .5rem;
+    bottom: .5rem;
+    border-radius: inherit;
+    border: 4px dotted white;
+    pointer-events: none;
+}
+
+.banner-container h2 {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.banner-container p {
+    margin: 5px;
+}
+
+.banner-container a {
+    color: var(--yellow-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.close {
+    font-size: 46px;
+	background: none;
+    border: 0;
+	color: var(--white-color);
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+
+.close:hover {
+    background-color: transparent;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
 /*======  Events  ======*/
 
 .events-container {
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 3 / 1 / 4 / 2;
     background-color: var(--light-gray);
     padding: 1rem;
     text-align: left;
@@ -234,40 +297,62 @@ img {
     padding: 1rem;
 }
 
-.weather-content {
-    padding: 15px;
+.weather-content
+{
+    padding: 15px ;
     text-align: center;
 }
 
-.weather-content img{
-    width: 80px;
-    height: 80px;
+.weather-content img,
+.weather-forecast img
+{
+    width: 50px;
+    height: 50px;
 }
 
-.temperature {
-    font-size: 24px;
+#temperature {
+    font-size: 22px;
     margin: 5px 0;
 }
 
-.condition {
+#current-date {
+    font-size: 24px;
+ font-weight: 700;
+}
+
+#condition {
     font-size: 16px;
     color: var(--black-color);
+    text-transform: capitalize;
 }
 
-.weather-info {
+.weather-forecast {
     margin-top: 15px;
-    text-align: left;
+    padding: 0 15px 15px 15px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
-.weather-info p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: var(--black-color);
+.weather-box {
+    cursor: pointer;
+    background-color: var(--white-color);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    margin-top: 10px;
+}
+
+#weekday-paragraph {
+    text-transform: capitalize;
 }
 
 /*======  Advertisement  ======*/
 
 .advertisements-container {
+    grid-area: 4 / 1 / 5 / 3;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -276,22 +361,28 @@ img {
     align-items: center;
 }
 
-.advertise {
+#advertise {
+    min-height: 200px;
     background-color: var(--light-gray);
     padding: 1rem;
+    justify-content: center;
 }
 
-.advertise h3{
+#advertise h3{
     text-align: left;
     color: var(--dark-green);
 }
 
-.message {
+#message {
     text-align: right;
+    margin: 10px;
 }
 
-.contact {
+#contact p,
+#contact a
+{
     text-align: center;
+    margin: 5px;
     color: var(--blue-color);
 }
 

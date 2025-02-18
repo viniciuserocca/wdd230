@@ -6,7 +6,9 @@
             "phone": "(17)98110-1991",
             "url": "https://www.instagram.com/_rccelulares_/",
             "logo": "./images/rc-logo.webp",
-            "membership": "Gold Member"
+            "membership": "Bronze Member",
+            "email": "contact@rccelulares.com",
+            "message": "Cell phone maintenance and accessories"
         },
         {
             "name": "Sushi Diamantino",
@@ -14,7 +16,9 @@
             "phone": "(17)98805-4431",
             "url": "https://www.instagram.com/sushidiamantino/",
             "logo": "./images/sushi-diamantino-logo.webp",
-            "membership": "Gold Member"
+            "membership": "Bronze Member",
+            "email": "contact@sushidiamantino.com",
+            "message": "Come enjoy Japanese cuisine with us"
         },
         {
             "name": "Villa Ice Sorveteria",
@@ -22,7 +26,9 @@
             "phone": "(17)98215-4163",
             "url": "https://www.instagram.com/villaicebarretos/",
             "logo": "./images/villa-ice-logo.webp",
-            "membership": "Gold Member"
+            "membership": "Gold Member",
+            "email": "contact@villaice.com",
+            "message": "The best ice cream of the city!"
         },
         {
             "name": "Prefeitura Barretos",
@@ -30,7 +36,9 @@
             "phone": "(17)3612-2000",
             "url": "https://barretos.sp.gov.br/",
             "logo": "./images/prefeitura-logo.webp",
-            "membership": "NP Member"
+            "membership": "NP Member",
+            "email": "ouvidoria@barretos.sp.gov.br",
+            "message": "The future has begun!"
         },
         {
             "name": "Espograf Gráfica",
@@ -38,7 +46,9 @@
             "phone": "(17)99255-5113",
             "url": "https://www.instagram.com/espografgrafica/",
             "logo": "./images/espograf-logo.webp",
-            "membership": "Silver Member"
+            "membership": "Silver Member",
+            "email": "contact@espograf.com",
+            "message": "We have been in the graphics market for 30 years. We provide graphic services in general."
         },
         {
             "name": "Eternize",
@@ -46,7 +56,9 @@
             "phone": "(17)98134-3117",
             "url": "https://www.eternizesuamarca.com.br/",
             "logo": "./images/eternize-logo.webp",
-            "membership": "Bronze Member"
+            "membership": "Silver Member",
+            "email": "adm@eternizesuamarca.com.br",
+            "message": "Check if your brand is available for registration!"
         },
         {
             "name": "RHP Energia",
@@ -54,7 +66,9 @@
             "phone": "(17)98108-3894",
             "url": "https://www.rhpenergia.com.br/",
             "logo": "./images/rhp-logo.webp",
-            "membership": "Bronze Member"
+            "membership": "Gold Member",
+            "email": "rhpenergia@gmail.com",
+            "message": "Solar energy is the fastest growing energy source in the world. Count on our services and start generating your own energy."
         }
     ]
 }
