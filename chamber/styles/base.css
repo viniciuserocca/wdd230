@@ -213,7 +213,6 @@ img {
     bottom: .5rem;
     border-radius: inherit;
     border: 4px dotted white;
-    pointer-events: none;
 }
 
 .banner-container h2 {
